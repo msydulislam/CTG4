@@ -1,0 +1,159 @@
+.body{
+	background: #272822;
+	width:100%;
+	height: auto;
+	margin: 0 auto;
+	position: relative;
+}
+
+.main{
+	width:600px;
+	height:500px;
+	transform:translate(60%, 50px);
+	background: white;
+	border: 1px solid red;
+	background-image: url(bg.jpg);
+	position: relative;
+}
+
+.header{
+	width: 100%;
+	height:10px;
+	margin:0px;
+	overflow: none;
+	position: relative;
+}
+
+.h_left{
+	width:30%;
+	height:45px;
+	background-color: red;
+	color: white;
+	float: left;
+	margin:0px;
+	overflow: all;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 15px;
+	display: inline-block;
+	margin:0px;
+	font-weight: bolder;
+	position: relative;
+}
+
+
+
+.h_right{
+	width:30%;
+	height: 45px;
+	background-color: green;
+	color: white;
+	float: right;
+	margin:0px;
+	border: 2px solid green;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bolder;
+	position: relative;
+}
+
+.animation{
+	width:30%;
+	height:30%;
+	text-align: center;
+	background: #D3D3D3;
+	border: 2px solid coral;
+	position: relative;
+	transform: translate(220px, 210px);
+}
+
+
+.animation p{
+	font-weight: bold;
+	font-size: 30px;
+	padding: 10px;
+	position: relative;
+	font-family: helvetica;
+}
+
+
+.button{
+	width:55px;
+	height:55px;
+	border: 4px solid pink;
+	background: coral;
+	float:left;
+	text-align: center;
+	transform: translate(520px, 270px);
+	border-radius: 50%;
+	position: relative;
+	transition: all;
+}
+
+.button img{
+	width:100%;
+}
+
+.button:hover{
+	background: green;
+	position:absolute;
+	transform: translate(500px, 270px);
+	transition-delay: 0s;
+	transition-duration: 1s;
+}
+
+
+@keyframes colorchange{
+	0%{
+	color:black;
+	transform:scale(.25);
+	}
+	15% {
+		color: yellow;
+		transform: scale(.50);
+	}
+
+	30%{
+		color: orange;
+		transform: scale(1);
+	}
+
+	45%{
+		color: red;
+		transform: scale(1.50);
+	}
+
+	60%{
+		color: violet;
+		transform: scale(.25);
+	}
+
+	75%{
+		color: blue;
+		transform: scale(.50);
+	}
+
+	90%{
+		color: indigo;
+		transform: scale(1.00);
+	}
+
+	100%{
+		color: green;
+		transform: scale(1.50);
+	}
+	
+}
+
+.animation p{
+	position: absolute;
+	animation-name: colorchange;
+	animation-duration: 45s;
+	animation-delay: 1s;
+	animation-iteration-count: infinite;
+
+}
+
+
+
